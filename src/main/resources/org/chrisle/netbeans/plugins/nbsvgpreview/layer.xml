@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN" "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+    <folder name="Editors">
+        <folder name="text">
+            <folder name="x-xml">
+                <folder name="MultiView">
+                    <file name="org-chrisle-netbeans-plugins-nbsvgpreview-NbSvgPreviewDataObject.instance_hidden"/>
+                    <file name="org-chrisle-netbeans-plugins-nbsvgpreview-NbSvgPreviewMVPreviewElement.instance">
+                        <attr name="class" stringvalue="org.chrisle.netbeans.plugins.nbsvgpreview.NbSvgPreviewDataObject"/>
+                        <attr name="iconBase" stringvalue="org/chrisle/netbeans/plugins/nbsvgpreview/svg-icon.png"/>
+                        <attr name="instanceClass" stringvalue="org.netbeans.core.multiview.ContextAwareDescription"/>
+                        <attr name="instanceCreate" methodvalue="org.netbeans.core.spi.multiview.MultiViewFactory.createMultiViewDescription"/>
+                        <attr name="persistenceType" intvalue="1"/>
+                        <attr name="position" intvalue="100"/>
+                        <attr name="preferredID" stringvalue="markdown.preview"/>
+                    </file>
+                </folder>
+            </folder>
+        </folder>
+    </folder>
+    <folder name="Templates">
+        <folder name="Other">
+            <file name="NbSvgPreviewTemplate.svg" url="NbSvgPreviewTemplate.svg">
+                <attr name="displayName" bundlevalue="org.chrisle.netbeans.plugins.nbsvgpreview.Bundle#Templates/Other/NbSvgPreviewTemplate.svg"/>
+                <attr name="template" boolvalue="true"/>
+            </file>
+        </folder>
+    </folder>
+</filesystem>
