@@ -6,15 +6,6 @@
             <folder name="x-xml">
                 <folder name="MultiView">
                     <file name="org-chrisle-netbeans-plugins-nbsvgpreview-NbSvgPreviewDataObject.instance_hidden"/>
-                    <file name="org-chrisle-netbeans-plugins-nbsvgpreview-NbSvgPreviewMVPreviewElement.instance">
-                        <attr name="class" stringvalue="org.chrisle.netbeans.plugins.nbsvgpreview.NbSvgPreviewDataObject"/>
-                        <attr name="iconBase" stringvalue="org/chrisle/netbeans/plugins/nbsvgpreview/svg-icon.png"/>
-                        <attr name="instanceClass" stringvalue="org.netbeans.core.multiview.ContextAwareDescription"/>
-                        <attr name="instanceCreate" methodvalue="org.netbeans.core.spi.multiview.MultiViewFactory.createMultiViewDescription"/>
-                        <attr name="persistenceType" intvalue="1"/>
-                        <attr name="position" intvalue="100"/>
-                        <attr name="preferredID" stringvalue="markdown.preview"/>
-                    </file>
                 </folder>
             </folder>
         </folder>
