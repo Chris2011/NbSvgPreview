@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package org.chrisle.netbeans.plugins.nbsvgpreview;
 
 import java.awt.EventQueue;
@@ -43,7 +38,7 @@ public final class NbSvgPreviewVisualElement extends JPanel implements MultiView
 
     private static final RequestProcessor RP = new RequestProcessor(NbSvgPreviewVisualElement.class);
 
-    private final Lookup context;
+    private final Lookup _context;
 
     private final FileObject sourceFile;
 
@@ -63,7 +58,7 @@ public final class NbSvgPreviewVisualElement extends JPanel implements MultiView
     private transient MultiViewElementCallback callback;
 
     public NbSvgPreviewVisualElement(Lookup context) {
-        this.context = context;
+        this._context = context;
         this.callback = null;
         this.sourceDoc = null;
         this.sourceDocListener = new DocumentHandler();
@@ -83,15 +78,8 @@ public final class NbSvgPreviewVisualElement extends JPanel implements MultiView
 
         htmlView = new HtmlViewFactory().createHtmlView();
         htmlViewListener = new PropertyChangeHandler();
-
-//        toolbar = new JToolBar();
-//        toolbar.setFloatable(false);
-//        toolbar.addSeparator();
-//        toolbar.add(new PreviewExternalAction(context));
-
-//        obj = lkp.lookup(NbSvgPreviewDataObject.class);
-//        assert obj != null;
-//        initComponents();
+        
+        initComponents();
     }
 
     private void updatePreview() {
@@ -112,7 +100,7 @@ public final class NbSvgPreviewVisualElement extends JPanel implements MultiView
     }
 
     private String renderPreview() {
-        IRenderable renderable = context.lookup(IRenderable.class);
+        IRenderable renderable = _context.lookup(IRenderable.class);
         String previewText;
         try {
             Set<RenderOption> renderOptions = EnumSet.of(
@@ -179,7 +167,7 @@ public final class NbSvgPreviewVisualElement extends JPanel implements MultiView
 
     @Override
     public Lookup getLookup() {
-        return context;
+        return _context;
     }
 
     @Override
